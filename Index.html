@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Serviços</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    header img.logo {
+      width: 300px;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      text-align: center;
+      color: #0d6efd;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
+    }
+    .price {
+      color: #6610f2;
+      font-weight: bold;
+      margin-top: 0.8rem;
+    }
+    .contact {
+      text-align: center;
+      margin: 4rem 0 2rem;
+    }
+    .contact a.whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background-color: #25d366;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .contact a.whatsapp img {
+      width: 24px;
+      height: 24px;
+    }
+    form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      margin: 3rem auto;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #0d6efd;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://i.postimg.cc/zBwLv8Cx/Captura-de-tela-2025-05-21-194250-removebg-preview.png" alt="Logo DesignOn" />
+    <p>Comprometimento com a excelência em cada detalhe visual</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Serviços</h2>
+    <div class="grid">
+      <a class="card" href="https://wa.me/5569993897139?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeo.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922017.png" alt="Vídeo">
+        <h3>Edição de Vídeo</h3>
+        <p>Vídeos curtos, reels, YouTube, com transições e efeitos modernos que prendem a atenção.</p>
+        <p class="price">R$ 80 por vídeo</p>
+      </a>
+
+      <a class="card" href="https://wa.me/5569993897139?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Social%20Media.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Social Media">
+        <h3>Social Media</h3>
+        <p>Criação de conteúdo, legendas criativas, calendário de posts e estratégias personalizadas.</p>
+        <p class="price">R$ 200 por mês</p>
+      </a>
+
+      <a class="card" href="https://wa.me/5569993897139?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Design%20Gr%C3%A1fico.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Design Gráfico">
+        <h3>Design Gráfico</h3>
+        <p>Criação de artes visuais impactantes para redes sociais, flyers, banners e campanhas.</p>
+        <p class="price">R$ 50 por arte</p>
+      </a>
+
+      <a class="card" href="https://wa.me/5569993897139?text=Ol%C3%A1!%20Tenho%20interesse%20no%20servi%C3%A7o%20de%20Consultoria%20Criativa.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Consultoria">
+        <h3>Consultoria Criativa</h3>
+        <p>Desenvolva seu projeto com ideias inovadoras, identidade visual e planejamento estratégico.</p>
+        <p class="price">R$ 70 por sessão</p>
+      </a>
+    </div>
+
+    <h2 class="section-title">Portfólio</h2>
+    <div class="portfolio">
+      <!-- Substitua os links abaixo por links online válidos -->
+      <img src="https://i.postimg.cc/BZYnB45P/Capturar.png"Portfólio 1">
+      <img src="https://i.postimg.cc/9fdP3fPJ/foto-02.png" alt="Portfólio 2">
+      <img src="https://i.postimg.cc/j2993r76/ksk.png" alt="Portfólio 3">
+      <img src="https://i.postimg.cc/hGdtGC2G/foto-07.png" alt="Portfólio 4">
+    </div>
+
+    <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <div class="contact">
+      <p>Entre em contato pelo WhatsApp:</p>
+      <a class="whatsapp" href="https://wa.me/5569993897139" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 DesignOn. Todos os direitos reservados. | Desenvolvido com 💡 criatividade e paixão por design
+  </footer>
+
+  <!-- Scripts de WhatsApp -->
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const mensagem = document.getElementById('mensagem').value;
+
+      const texto = `Olá! Meu nome é ${nome}, meu e-mail é ${email}. Estou entrando em contato com a seguinte mensagem:%0A%0A${encodeURIComponent(mensagem)}`;
+      const numeroWhatsApp = "5569993897139";
+      const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+
+      window.open(url, '_blank');
+    }
+
+    function enviarWhatsAppServico(servico) {
+      const texto = `Olá! Tenho interesse no serviço de *${servico}*. Poderia me dar mais informações?`;
+      const numeroWhatsApp = "5569993897139";
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
